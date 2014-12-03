@@ -19,3 +19,6 @@ gulp.core.task 'styles', ->
     .pipe gulp.$.minifyCss()
     .pipe gulp.$.rename suffix: '.min'
     .pipe gulp.core.dest './'
+
+gulp.core.task 'watch', ->
+  gulp.core.watch styles.path, ['styles']
