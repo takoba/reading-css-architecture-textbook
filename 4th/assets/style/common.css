@@ -5,6 +5,20 @@
  *
  */
 
+/**
+ * reset
+ */
+button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -mox-appearance: none;
+  appearance: none;
+  background: transparent none;
+  font-size: inherit;
+}
+
 .button {
   display: inline-block;
   border: 1px solid #000;
