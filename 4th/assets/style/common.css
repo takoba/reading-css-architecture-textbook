@@ -26,3 +26,25 @@ button {
   background-color: #eee;
   cursor: pointer;
 }
+
+/**
+ * aタグをbuttonとして扱う場合、aタグの要素セレクタと完全に切り離す
+ * （元々のaタグとしての振る舞いが汚染されてしまう可能性があるので）
+ */
+a.button {  /* 面倒だったので要素セレクタまで指定しちゃってますてへぺろ */
+  -webkit-appearance: none;
+  -mox-appearance: none;
+  appearance: none;
+  display: inline-block;
+  box-sizing: border-box;  /* 追加 */
+  border: 1px solid #000;
+  margin: 0;
+  padding: 0.3em 1em;
+  text-align: center;  /* 追加 */
+  line-height: 1;  /* 追加 */
+  background: #eee;
+  text-decoration: none;  /* 追加 */
+  font-size: inherit;
+  color: inherit;  /* 追加 */
+  cursor: pointer;
+}
