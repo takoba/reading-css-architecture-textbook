@@ -48,3 +48,25 @@ a.button {  /* 面倒だったので要素セレクタまで指定しちゃっ�
   color: inherit;  /* 追加 */
   cursor: pointer;
 }
+
+/**
+ * modifierでコンポーネントに変化を付ける
+ */
+.btn {
+  display: block;
+  border: 1px solid #000;
+  padding: 0.3em 1em;
+  background-color: #eee;
+  cursor: pointer;
+
+  margin: 0.5em inherit;
+}
+.btn--short {
+  width: 200px;
+}
+.btn--long {
+  width: 400px;
+}
+.btn--full {
+  width:100%;
+}
